@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Portfolio | Ahmed Nazran</title>
+
+</head>
+
+<body>
+
+    <div class="navbar">
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <!-- <li><a href="#about">About</a></li> -->
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contact</a></li>
+
+        </ul>
+    </div>
+
+    <div class="container" id="home">
+        <div class="content">
+            <div class="image-section">
+                <img src="ix.jpg" alt="Ahmed Nazran" id="profile-image" loading="lazy">
+            </div>
+            <div class="text-section">
+                <h1 class="animated-heading"><span>A</span><span>h</span><span>m</span><span>e</span><span>d</span>
+                    <span>N</span><span>a</span><span>z</span><span>r</span><span>a</span><span>n</span>
+                </h1>
+                <p> A passionate learner, programmer, web developer, and graphics designer. </p>
+
+                <div class="spinner">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about" id="about">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="ix.jpg" alt="About Image" loading="lazy">
+            </div>
+            <div class="about-text">
+                <h1 class="hedo">About Me</h1>
+                <p>I am Ahmed Nazran, a passionate learner, programmer, web developer, and graphics designer. I began
+                    programming four years ago with Python and have developed various software and automation programs.
+                    My web development work includes e-commerce, educational, and social media websites, all designed
+                    for functionality and user experience. I am also a skilled problem solver in Python and create
+                    visually appealing designs that enhance my coding projects. Additionally, I have robotics skills and
+                    am currently learning advanced back-end development and ethical hacking. </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="skills" id="skills">
+        <div class="skills-content">
+            <div class="skills-text">
+                <h1 class="hedo">Skills</h1>
+                <p> Here are some of the programming languages and tools in which I have developed a strong proficiency,
+                    showcasing my ability to deliver high-quality solutions across various platforms and technologies:
+                </p>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <i style="color:#056dad" class="fab fa-python"></i>
+                        <p>Python</p>
+                        <div class="skill-bar">
+                            <div class="skill-percentage" data-percentage="90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i style="color:tomato" class="fab fa-html5"></i>
+                        <p>HTML</p>
+                        <div class="skill-bar">
+                            <div class="skill-percentage" data-percentage="85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i style="color: yellow;" class="fab fa-js"></i>
+                        <p> JavaScript</p>
+                        <div class="skill-bar">
+                            <div class="skill-percentage" data-percentage="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i style="color:lime" class="fab fa-node-js"></i>
+                        <p>Node.js</p>
+                        <div class="skill-bar">
+                            <div class="skill-percentage" data-percentage="70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i style="color:lightblue" class="fab fa-css3-alt"></i>
+                        <p>CSS</p>
+                        <div class="skill-bar">
+                            <div class="skill-percentage" data-percentage="80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i style="color: blue;" class="fab fa-cuttlefish"></i>
+                        <p>C</p>
+                        <div class="skill-bar">
+                            <div class="skill-percentage" data-percentage="75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i style="color: blueviolet;" class="fab fa-php"></i>
+                        <p>PHP</p>
+                        <div class="skill-bar">
+                            <div class="skill-percentage" data-percentage="50%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <i style="color: blue;" class="fa fa-database"></i>
+                        <p> Database: SQLite, MySQL</p>
+                        <div class="skill-bar">
+                            <div class="skill-percentage" data-percentage="45%"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <p>Besides these, I use Krita, Adobe Photoshop and Paint 3D etc for Graphics Designing.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects" id="projects">
+        <div class="projects-content">
+            <h1 class="hedo">Projects</h1>
+            <p style="padding-left:5px;">Here are some of my works:</p><br>
+            <div class="project-cards-container">
+                <div class="project-cards">
+
+                    <div class="project-card"> <a href="http://vortex-ai.great-site.net/" target="_blank">
+                            <img
+                                src="https://t3.ftcdn.net/jpg/05/10/19/76/360_F_510197660_scfGljWDccpAMnVrHjZBRDya0iNfsPIi.jpg">
+                            <h2>VORTEX AI</h2>
+                        </a>
+                        <hr>
+                        <p class="project-description">VORTEX AI is a powerful language model designed to assist you
+                            with a wide range of tasks.
+                            From generating creative content like stories and poems to answering your questions in an
+                            informative and comprehensive way, it can be your reliable partner for learning,
+                            entertainment, and productivity. It can translate languages, summarize text, write different
+                            kinds of creative content, and even help you debug code. Whether you need assistance with
+                            your work, are looking for inspiration, or simply want to chat, VORTEX AI is here to help.
+                            <br>
+                            <a style="color:cyan"
+                                href="http://vortex-ai.great-site.net/">http://vortex-ai.great-site.net/</a>
+                        </p>
+                    </div>
+
+
+                    <div class="project-card"> <a href="https://nit.neocities.org" target="_blank">
+                            <img
+                                src="https://media.istockphoto.com/id/1456634685/photo/4k-technologic-background-digital-landscape-blue.webp?b=1&s=170667a&w=0&k=20&c=88GGxY9-lv3LqQTIov2y4YC_Ckd941ygDwXNa1sGw-g=">
+                            <h2>NIT</h2>
+                        </a>
+                        <hr>
+                        <p class="project-description">NEAN INFORMATION AND TECHNOLOGY<br>Discover the world of science
+                            and technology with NEAN Information and Technology. We offer courses in Web Development,
+                            Software Development, App and Game Development, programming languages, ethical hacking, and
+                            robotics. Join us to enhance your skills and stay updated with the latest in technology.</p>
+                    </div>
+
+
+                    <div class="project-card"> <a href="https://github.com/Ahmed-Nazran/Voice_typer" target="_blank">
+                            <img
+                                src="https://c4.wallpaperflare.com/wallpaper/738/800/982/keyboard-wallpaper-preview.jpg">
+                            <h2>Voice Typer</h2>
+                        </a>
+                        <hr>
+                        <p class="project-description">Voice Typer is a Python-based application that converts spoken
+                            words into text, enabling hands-free typing. It utilizes advanced speech recognition
+                            technology to provide an efficient and user-friendly experience for creating documents and
+                            notes through voice commands.</p>
+                    </div>
+
+                    <a href="#" target="_blank">
+                        <div class="project-card">
+                            <h2>Browser</h2>
+                            <hr>
+                            <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Corporis suscipit exercitationem
+                                quia commodi quae facilis eos odit, laudantium optio tempore provident? Culpa molestias
+                                laborum perferendis magnam ipsum, rerum quidem voluptatibus!</p>
+                        </div>
+                    </a>
+
+                    <a href="#" target="_blank">
+                        <div class="project-card">
+                            <h2>Desktop Assistant</h2>
+                            <hr>
+                            <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Corporis suscipit exercitationem
+                                quia commodi quae facilis eos odit, laudantium optio tempore provident? Culpa molestias
+                                laborum perferendis magnam ipsum, rerum quidem voluptatibus!</p>
+                        </div>
+                    </a>
+
+                    <a href="#" target="_blank">
+                        <div class="project-card">
+                            <h2>PROJECT X</h2>
+                            <hr>
+                            <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Corporis suscipit exercitationem
+                                quia commodi quae facilis eos odit, laudantium optio tempore provident? Culpa molestias
+                                laborum perferendis magnam ipsum, rerum quidem voluptatibus!</p>
+                        </div>
+                    </a>
+
+                    <a href="#" target="_blank">
+                        <div class="project-card">
+                            <img
+                                src="https://t4.ftcdn.net/jpg/08/00/22/73/360_F_800227395_694KHzkClJggCKSw9irhsLQIMgSgCcMc.jpg">
+                            <h2>Some of my designs</h2>
+                            <hr>
+
+                        </div>
+                    </a>
+
+                </div>
+                <br>
+                <br>
+                <br>
+
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </div>
+
+
+    <div class="contacts" id="contacts">
+        <section class="contact-section">
+            <h1 class="hedo">Contact Me</h1><br>
+            <div class="cont">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <div class="info-item">
+                        <i class="fa fa-map-marker"></i>
+                        <p>Location: Dhaka, Bangladesh</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa fa-envelope"></i>
+                        <p>Email: ahmednazran09@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-discord"></i>
+                        <p>Discord: void#7904</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-github"></i>
+                        <p>Ahmed-Nazran</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+
+                    <form>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required><br>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br>
+
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required><br>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea><br>
+
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+
+
+    <script>
+
+        gsap.registerPlugin(ScrollTrigger);
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const profileImage = document.getElementById("profile-image");
+            profileImage.classList.add("loaded");
+        });
+
+
+
+        gsap.to(".skills", {
+            scrollTrigger: {
+                trigger: ".skills",
+                start: "top 80%",
+                end: "bottom 20%",
+                toggleActions: "play none none reverse",
+            },
+            opacity: 1,
+            y: 0,
+            duration: 1,
+        });
+
+        gsap.utils.toArray('.skill-percentage').forEach((elem) => {
+            const percentage = elem.getAttribute('data-percentage');
+            gsap.to(elem, {
+                width: percentage,
+                duration: 1.5,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: elem,
+                    start: "top 90%",
+                    toggleActions: "play none none reverse",
+                },
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            gsap.fromTo(".project-card",
+                {opacity: 0, y: 50},
+                {opacity: 1, y: 0, duration: 1, stagger: 0.2}
+            );
+        });
+
+
+
+    </script>
+
+    <script>
+        document.addEventListener('scroll', function () {
+            const aboutSection = document.querySelector('.about');
+            const projectsSection = document.getElementById('skills');
+            const projectsRect = projectsSection.getBoundingClientRect();
+
+            if (projectsRect.top >= 0) {
+                aboutSection.style.zIndex = '0';
+            } else {
+                aboutSection.style.zIndex = '0';
+            }
+        });
+
+    </script>
+
+
+</body>
+
+</html>
