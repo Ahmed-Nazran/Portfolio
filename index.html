@@ -124,7 +124,7 @@
                   </td>
                 </tr>
 
-                <tr data-aos="fade-right">
+                <tr data-aos="fade-left">
                   <th>Graphics Design</th>
                   <td>
                     <i class="devicon-illustrator-plain colored" data-skill="Adobe Illustrator"></i>
@@ -176,10 +176,19 @@
                         <p class="project-description">Nean Information & Technology (NIT), founded in 2022, offers a range of courses including Python, web development, and cybersecurity, while also sharing interesting science and technology facts.</p>
                     </div>
 
+                    <div class="project-card"> <a href="https://istarc.org" target="_blank">
+                            <img
+                                src="https://scontent.fdac138-1.fna.fbcdn.net/v/t39.30808-6/506529861_24032275106407463_2502061691967777576_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=86c6b0&_nc_ohc=HPTUTd4dmKQQ7kNvwHm0Ubf&_nc_oc=Adner8IgdyhGPUuSl83VJwtdSg3ykPu9UTYvxLnRsRRpAQvVqxU3CJANF5-0_OVTpfE&_nc_zt=23&_nc_ht=scontent.fdac138-1.fna&_nc_gid=QYSRNfk1qogoG7UDOu-p2g&oh=00_AfZO-zfqaORNtT7nLseHrMEBei8kr1ECURQ3JRDdSYs9ig&oe=68E08911">
+                        <h2>ISTARC's official website</h2>
+                        </a>
+                        <hr>
+                        <p class="project-description">Ideal Science and Technology Aiming Research Council, also known as ISTARC, the most promising, versatile and distinguished co-curricular activities club of Ideal School and College.</p>
+                    </div>
+
                     <div class="project-card"> <a href="https://github.com/Ahmed-Nazran/Nean-Browser" target="_blank">
                             <img
                                 src="https://png.pngtree.com/thumb_back/fh260/background/20230705/pngtree-d-rendered-illustration-of-a-search-bar-and-magnifying-glass-on-image_3817237.jpg">
-                            <h2>Browser</h2>
+                            <h2>Nean Browser</h2>
                         </a>
                         <hr>
                         <p class="project-description"> Python PyQT5 based browser with some extra features!
@@ -255,7 +264,7 @@
                     </div>
                     <div class="info-item">
                         <i class="fab fa-github"></i>
-                        <p>Ahmed-Nazran</p>
+                        <p>Github: Ahmed-Nazran</p>
                     </div>
                 </div>
                 <div class="contact-form">
@@ -333,6 +342,72 @@
             }
         });
 
+        gsap.registerPlugin(ScrollTrigger);
+
+        
+        gsap.from(".about-image", {
+          scrollTrigger: {
+            trigger: ".about",
+            start: "top 75%",
+            toggleActions: "play none none reverse",
+            once: true,
+          },
+          y: 80,
+          opacity: 0,
+          duration: 0.8,
+          ease: "power2.out"
+        });
+
+        gsap.from(".about-text", {
+          scrollTrigger: {
+            trigger: ".about",
+            start: "top 75%",
+            toggleActions: "play none none reverse",
+            once: true,
+          },
+          x: 80,
+          opacity: 0,
+          duration: 0.8,
+          ease: "power2.out",
+          delay: 0.15
+        });
+
+        gsap.from(".contact-section .hedo", {
+          scrollTrigger: {
+            trigger: ".contact-section",
+            start: "top 85%",
+            toggleActions: "play none none reverse"
+          },
+          y: -50,
+          opacity: 0,
+          duration: 1,
+          ease: "power3.out"
+        });
+
+        gsap.from(".contact-info", {
+          scrollTrigger: {
+            trigger: ".contact-section",
+            start: "top 80%",
+            toggleActions: "play none none reverse"
+          },
+          x: -100,
+          opacity: 0,
+          duration: 1.2,
+          ease: "power3.out"
+        });
+
+        gsap.from(".contact-form", {
+          scrollTrigger: {
+            trigger: ".contact-section",
+            start: "top 80%",
+            toggleActions: "play none none reverse"
+          },
+          x: 100,
+          opacity: 0,
+          duration: 1.2,
+          ease: "power3.out",
+          delay: 0.2
+        });
     </script>
 
 
