@@ -29,6 +29,7 @@ body {
     margin: 20px;
     opacity: 0;
     animation: fadeInNavbar 0.5s ease forwards;
+
 }
 
 .navbar ul {
@@ -285,6 +286,7 @@ body {
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
     backdrop-filter: blur(5px);
+    height: 100vh;
 }
 
 .projects {
@@ -536,7 +538,7 @@ a {
 .hedo {
     text-align: center;
     color: white;
-    text-shadow: 0px 5px 4px rgba(6, 64, 115, 1);
+    /* text-shadow: 0px 5px 4px rgba(6, 64, 115, 1); */
 }
 
 
@@ -601,9 +603,9 @@ a {
 
 .contact-form input, .contact-form textarea {
     padding: 10px;
-    border: 1px solid #333;
+    border: none;
     border-radius: 5px;
-    background: #1e1e1e;
+    background: #11171e;
     color: #fff;
     margin-bottom: 15px;
 }
@@ -622,7 +624,7 @@ a {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background: #00aaff;
+    background: #008bd1;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
@@ -661,10 +663,33 @@ a {
     }
 
     .contact-info, .contact-form {
-        text-align: center;
+        text-align: left;
     }
 
     .contact-info {
         margin-bottom: 30px;
+    }
+
+    .navbar ul li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 5px;
+        transition: all 0.5s ease;
+    }
+
+    .navbar ul li {
+        margin-left: 5px;
+    }
+
+    .animated-heading {
+        font-size: 25px;
+        color: #fff;
+        margin-bottom: 10px;
+        animation: slideIn 2.5s ease forwards;
+    }
+
+    .about-text p {
+        font-size: 18px;
+        line-height: 1.3;
     }
 }
