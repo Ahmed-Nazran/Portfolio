@@ -366,9 +366,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.5);
     border-radius: 15px;
-    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
     backdrop-filter: blur(500px);
 }
 
