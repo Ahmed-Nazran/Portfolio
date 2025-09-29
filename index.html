@@ -9,6 +9,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
     <title>Portfolio | Ahmed Nazran</title>
@@ -18,36 +20,24 @@
 <body>
 
     <div class="navbar">
-
         <ul>
             <li><a href="#home">Home</a></li>
-            <!-- <li><a href="#about">About</a></li> -->
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contacts">Contact</a></li>
-
         </ul>
     </div>
 
     <div class="container" id="home">
         <div class="content">
             <div class="image-section">
-                <img src="ix.jpg" alt="Ahmed Nazran" id="profile-image" loading="lazy">
+                <img src="pfpx.png" alt="Ahmed Nazran" id="profile-image" loading="lazy">
             </div>
             <div class="text-section">
-                <h1 class="animated-heading"><span>A</span><span>h</span><span>m</span><span>e</span><span>d</span>
-                    <span>N</span><span>a</span><span>z</span><span>r</span><span>a</span><span>n</span>
+                <h1 class="animated-heading"><span>A</span><span>H</span><span>M</span><span>E</span><span>D</span>
+                    <span>N</span><span>A</span><span>Z</span><span>R</span><span>A</span><span>N</span>
                 </h1>
-                <p> A passionate learner, programmer, web developer, and graphics designer. </p>
-
-                <div class="spinner">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
+                <p> A passionate learner, programmer, developer, and graphics designer. </p>
             </div>
         </div>
     </div>
@@ -55,16 +45,11 @@
     <div class="about" id="about">
         <div class="about-content">
             <div class="about-image">
-                <img src="ix.jpg" alt="About Image" loading="lazy">
+                <img src="pfpx.png" alt="About Image" loading="lazy">
             </div>
             <div class="about-text">
                 <h1 class="hedo">About Me</h1>
-                <p>I am Ahmed Nazran, a passionate learner, programmer, web developer, and graphics designer. I began
-                    programming four years ago with Python and have developed various software and automation programs.
-                    My web development work includes e-commerce, educational, and social media websites, all designed
-                    for functionality and user experience. I am also a skilled problem solver in Python and create
-                    visually appealing designs that enhance my coding projects. Additionally, I have robotics skills and
-                    am currently learning advanced back-end development and ethical hacking. </p>
+                <p>I’m Ahmed Nazran, a curious coder who began exploring the world of programming five years ago with Python, and I still enjoy discovering more of it. Over the years, I’ve crafted software, automated programs, and playful games, while also diving into web development to create visually engaging and unique websites. Along the way, I’ve explored robotics and honed my skills in graphic design, blending creativity with technology. Currently, I am advancing my journey into full-stack development, always seeking new ways to bring ideas to life!</p>
             </div>
         </div>
     </div>
@@ -73,70 +58,82 @@
         <div class="skills-content">
             <div class="skills-text">
                 <h1 class="hedo">Skills</h1>
-                <p> Here are some of the programming languages and tools in which I have developed a strong proficiency,
-                    showcasing my ability to deliver high-quality solutions across various platforms and technologies:
+                <p> These are some of the programming languages and tools I’ve become really comfortable with, highlighting my ability to create effective solutions across different platforms and technologies
                 </p>
-                <div class="skills-list">
-                    <div class="skill-item">
-                        <i style="color:#056dad" class="fab fa-python"></i>
-                        <p>Python</p>
-                        <div class="skill-bar">
-                            <div class="skill-percentage" data-percentage="90%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <i style="color:tomato" class="fab fa-html5"></i>
-                        <p>HTML</p>
-                        <div class="skill-bar">
-                            <div class="skill-percentage" data-percentage="85%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <i style="color: yellow;" class="fab fa-js"></i>
-                        <p> JavaScript</p>
-                        <div class="skill-bar">
-                            <div class="skill-percentage" data-percentage="80%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <i style="color:lime" class="fab fa-node-js"></i>
-                        <p>Node.js</p>
-                        <div class="skill-bar">
-                            <div class="skill-percentage" data-percentage="70%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <i style="color:lightblue" class="fab fa-css3-alt"></i>
-                        <p>CSS</p>
-                        <div class="skill-bar">
-                            <div class="skill-percentage" data-percentage="80%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <i style="color: blue;" class="fab fa-cuttlefish"></i>
-                        <p>C</p>
-                        <div class="skill-bar">
-                            <div class="skill-percentage" data-percentage="75%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <i style="color: blueviolet;" class="fab fa-php"></i>
-                        <p>PHP</p>
-                        <div class="skill-bar">
-                            <div class="skill-percentage" data-percentage="50%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <i style="color: blue;" class="fa fa-database"></i>
-                        <p> Database: SQLite, MySQL</p>
-                        <div class="skill-bar">
-                            <div class="skill-percentage" data-percentage="45%"></div>
-                        </div>
-                    </div>
 
-                </div>
+            <table class="skills-table">
+                <tr data-aos="fade-left">
+                  <th></th>
+                  <td></td>
+                </tr>
+                <tr data-aos="fade-right">
+                  <th>Programming Languages</th>
+                  <td>
+                    <i class="devicon-python-plain colored" data-skill="Python – DSA, OOP, automation, backend, GUI"></i>
+                    <i class="devicon-c-plain colored" data-skill="C – Systems programming, robotics, iGraphics"></i>
+                    <i class="devicon-cplusplus-plain colored" data-skill="C++"></i>
+                    <i class="devicon-javascript-plain colored" data-skill="JavaScript – Web development"></i>
+                    <i class="devicon-typescript-plain colored" data-skill="TypeScript"></i>
+                  </td>
+                </tr>
 
-                <p>Besides these, I use Krita, Adobe Photoshop and Paint 3D etc for Graphics Designing.</p>
+                <tr data-aos="fade-left">
+                  <th>Web Development</th>
+                  <td>
+                    <i class="devicon-html5-plain colored" data-skill="HTML5"></i>
+                    <i class="devicon-css3-plain colored" data-skill="CSS3"></i>
+                    <i class="devicon-bootstrap-plain colored" data-skill="Bootstrap"></i>
+                    <i class="devicon-sass-original colored" data-skill="SASS"></i>
+                    <i class="fas fa-bolt" style="color:#88ce02;" data-skill="GSAP – High performance JavaScript animations"></i>
+                    <i class="devicon-react-original colored" data-skill="React"></i>
+                    <i class="devicon-vuejs-plain colored" data-skill="Vue.js"></i>
+                  </td>
+                  <td>
+                    <i class="devicon-php-plain colored" data-skill="PHP – Server-side scripting & web apps"></i>
+                    <i class="devicon-nodejs-plain colored" data-skill="Node.js"></i>
+                    <i class="devicon-django-plain colored" data-skill="Django"></i>
+                    <i class="devicon-flask-original" data-skill="Flask"></i>
+                  </td>
+                </tr>
+
+                <tr data-aos="fade-right">
+                  <th>Databases</th>
+                  <td>
+                    <i class="devicon-mysql-plain colored" data-skill="MySQL"></i>
+                    <i class="devicon-mongodb-plain colored" data-skill="MongoDB"></i>
+                    <i class="devicon-sqlite-plain colored" data-skill="SQLite"></i>
+                  </td>
+                </tr>
+
+                <tr data-aos="fade-left">
+                  <th>Apps & Games (GUI)</th>
+                  <td>
+                    <i class="devicon-godot-plain colored" data-skill="Godot – 2D Game Dev"></i>
+                    <i class="fas fa-mobile-alt" style="color:#00c3ff;" data-skill="Kivy – Python framework for cross-platform apps"></i>
+                    <i class="fas fa-window-maximize" style="color:#41cd52;" data-skill="PyQt – Python GUI apps with Qt"></i>
+                    <i class="fas fa-draw-polygon" style="color:#f39c12;" data-skill="iGraphics – Graphics library in C"></i>
+                    <i class="fas fa-layer-group" style="color:#ff6f61;" data-skill="Flet – Python framework for reactive apps"></i>
+                  </td>
+                </tr>
+
+                <tr data-aos="fade-right">
+                  <th>Robotics & IoT</th>
+                  <td>
+                    <i class="devicon-arduino-plain colored" data-skill="Arduino"></i>
+                    <i class="fas fa-microchip" style="color:#e67e22;" data-skill="ESP"></i>
+                  </td>
+                </tr>
+
+                <tr data-aos="fade-right">
+                  <th>Graphics Design</th>
+                  <td>
+                    <i class="devicon-illustrator-plain colored" data-skill="Adobe Illustrator"></i>
+                    <i class="devicon-photoshop-plain colored" data-skill="Adobe Photoshop – editing & design"></i>
+                    <i class="fas fa-paint-brush" style="color:#3498db;" data-skill="Paint 3D – 3D modeling & digital art"></i>
+                    <i class="fas fa-palette" style="color:#9b59b6;" data-skill="Krita"></i>
+                  </td>
+                </tr>
+              </table>
             </div>
         </div>
     </div>
@@ -147,6 +144,47 @@
             <p style="padding-left:5px;">Here are some of my works:</p><br>
             <div class="project-cards-container">
                 <div class="project-cards">
+
+                    <div class="project-card"> <a href="https://github.com/Ahmed-Nazran/Voice_typer" target="_blank">
+                            <img
+                                src="https://c4.wallpaperflare.com/wallpaper/738/800/982/keyboard-wallpaper-preview.jpg">
+                            <h2>Voice Typer</h2>
+                        </a>
+                        <hr>
+                        <p class="project-description">Voice Typer is a Python-based application that converts spoken
+                            words into text, enabling hands-free typing. It utilizes advanced speech recognition
+                            technology to provide an efficient and user-friendly experience for creating documents and
+                            notes through voice commands.
+                        </p>
+                    </div>
+
+                    <div class="project-card"> <a href="https://github.com/Ahmed-Nazran/Neko-AI" target="_blank">
+                            <img
+                                src="https://wallpapers.com/images/thumbnail/lady-work-set-up-cafe-9ji5pra94ga4vrm4.webp">
+                            <h2>Neko AI</h2>
+                        </a>
+                        <hr>
+                        <p class="project-description">A simple personal desktop assitant, with various features!</p>
+                    </div>
+
+                    <div class="project-card"> <a href="https://nit.neocities.org" target="_blank">
+                            <img
+                                src="https://media.istockphoto.com/id/1456634685/photo/4k-technologic-background-digital-landscape-blue.webp?b=1&s=170667a&w=0&k=20&c=88GGxY9-lv3LqQTIov2y4YC_Ckd941ygDwXNa1sGw-g=">
+                            <h2>NIT</h2>
+                        </a>
+                        <hr>
+                        <p class="project-description">Nean Information & Technology (NIT), founded in 2022, offers a range of courses including Python, web development, and cybersecurity, while also sharing interesting science and technology facts.</p>
+                    </div>
+
+                    <div class="project-card"> <a href="https://github.com/Ahmed-Nazran/Nean-Browser" target="_blank">
+                            <img
+                                src="https://png.pngtree.com/thumb_back/fh260/background/20230705/pngtree-d-rendered-illustration-of-a-search-bar-and-magnifying-glass-on-image_3817237.jpg">
+                            <h2>Browser</h2>
+                        </a>
+                        <hr>
+                        <p class="project-description"> Python PyQT5 based browser with some extra features!
+                        </p>
+                    </div>
 
                     <div class="project-card"> <a href="http://vortex-ai.great-site.net/" target="_blank">
                             <img
@@ -167,74 +205,15 @@
                         </p>
                     </div>
 
-
-                    <div class="project-card"> <a href="https://nit.neocities.org" target="_blank">
+                    <div class="project-card"> <a href="https://github.com/Ahmed-Nazran/Python-mini-projects" target="_blank">
                             <img
-                                src="https://media.istockphoto.com/id/1456634685/photo/4k-technologic-background-digital-landscape-blue.webp?b=1&s=170667a&w=0&k=20&c=88GGxY9-lv3LqQTIov2y4YC_Ckd941ygDwXNa1sGw-g=">
-                            <h2>NIT</h2>
+                                src="https://wallpapercave.com/wp/wp14813365.webp">
+                            <h2>Python Mini Projects</h2>
                         </a>
                         <hr>
-                        <p class="project-description">NEAN INFORMATION AND TECHNOLOGY<br>Discover the world of science
-                            and technology with NEAN Information and Technology. We offer courses in Web Development,
-                            Software Development, App and Game Development, programming languages, ethical hacking, and
-                            robotics. Join us to enhance your skills and stay updated with the latest in technology.</p>
-                    </div>
-
-
-                    <div class="project-card"> <a href="https://github.com/Ahmed-Nazran/Voice_typer" target="_blank">
-                            <img
-                                src="https://c4.wallpaperflare.com/wallpaper/738/800/982/keyboard-wallpaper-preview.jpg">
-                            <h2>Voice Typer</h2>
-                        </a>
-                        <hr>
-                        <p class="project-description">Voice Typer is a Python-based application that converts spoken
-                            words into text, enabling hands-free typing. It utilizes advanced speech recognition
-                            technology to provide an efficient and user-friendly experience for creating documents and
-                            notes through voice commands.</p>
-                    </div>
-
-                    <a href="#" target="_blank">
-                        <div class="project-card">
-                            <h2>Browser</h2>
-                            <hr>
-                            <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                Corporis suscipit exercitationem
-                                quia commodi quae facilis eos odit, laudantium optio tempore provident? Culpa molestias
-                                laborum perferendis magnam ipsum, rerum quidem voluptatibus!</p>
-                        </div>
-                    </a>
-
-                    <a href="#" target="_blank">
-                        <div class="project-card">
-                            <h2>Desktop Assistant</h2>
-                            <hr>
-                            <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                Corporis suscipit exercitationem
-                                quia commodi quae facilis eos odit, laudantium optio tempore provident? Culpa molestias
-                                laborum perferendis magnam ipsum, rerum quidem voluptatibus!</p>
-                        </div>
-                    </a>
-
-                    <a href="#" target="_blank">
-                        <div class="project-card">
-                            <h2>PROJECT X</h2>
-                            <hr>
-                            <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                                Corporis suscipit exercitationem
-                                quia commodi quae facilis eos odit, laudantium optio tempore provident? Culpa molestias
-                                laborum perferendis magnam ipsum, rerum quidem voluptatibus!</p>
-                        </div>
-                    </a>
-
-                    <a href="#" target="_blank">
-                        <div class="project-card">
-                            <img
-                                src="https://t4.ftcdn.net/jpg/08/00/22/73/360_F_800227395_694KHzkClJggCKSw9irhsLQIMgSgCcMc.jpg">
-                            <h2>Some of my designs</h2>
-                            <hr>
-
-                        </div>
-                    </a>
+                        <p class="project-description">Some simple python projects for fun!
+                        </p>
+                    </div>                    
 
                 </div>
                 <br>
@@ -272,7 +251,7 @@
                     </div>
                     <div class="info-item">
                         <i class="fab fa-discord"></i>
-                        <p>Discord: void#7904</p>
+                        <p>Discord: von_beyond_the_void</p>
                     </div>
                     <div class="info-item">
                         <i class="fab fa-github"></i>
@@ -301,10 +280,13 @@
         </section>
     </div>
 
-
-
-
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+           duration: 900,
+           once: true
+        });
+    </script>
 
     <script>
 
@@ -329,27 +311,12 @@
             duration: 1,
         });
 
-        gsap.utils.toArray('.skill-percentage').forEach((elem) => {
-            const percentage = elem.getAttribute('data-percentage');
-            gsap.to(elem, {
-                width: percentage,
-                duration: 1.5,
-                ease: "power2.out",
-                scrollTrigger: {
-                    trigger: elem,
-                    start: "top 90%",
-                    toggleActions: "play none none reverse",
-                },
-            });
-        });
         document.addEventListener('DOMContentLoaded', function () {
             gsap.fromTo(".project-card",
                 {opacity: 0, y: 50},
                 {opacity: 1, y: 0, duration: 1, stagger: 0.2}
             );
         });
-
-
 
     </script>
 
